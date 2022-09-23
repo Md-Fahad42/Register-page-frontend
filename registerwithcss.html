@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+    <style>
+      .mycard {
+        border: 1px solid black;
+        width: 50%;
+        /* margin: 200px auto; */
+        padding: 20px;
+        height: auto;
+        box-sizing: border-box;
+        border-radius: 11px;
+        
+            box-shadow: 1px 4px 5px 5px gray;
+        background: linear-gradient(45deg, pink, rgb(215, 255, 255));
+      }
+
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("rp.jpg");
+        background-size: cover;
+        
+      }
+      .mclass, .mbt1{
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 7px;
+        border: none;
+        background-color: aliceblue;
+        box-shadow: 1px 3px 5px 2px gray;
+        cursor: text; 
+        
+      }
+
+      .mclass:focus{
+        
+    outline: none; 
+    box-shadow: 0 0 10px #f9589b;
+      }
+      
+         .mr1, .mr2{
+          margin-bottom: 20px;
+
+         }
+         .mbt1{
+          /* display: block; */
+          border-radius: 12px;
+          width: 30%;
+          margin-bottom: 15px;
+          cursor: pointer;
+          background-color: rgb(123, 156, 255);
+          box-shadow: 1px 3px 5px 3px gray;
+         }
+         .mbt1:hover{
+        box-shadow: none;
+          transform: translateY(5PX);
+          background-color: rgb(196, 150, 234);
+        }
+
+        .mbt1:focus{
+              outline: 3px solid red;
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="mycard">
+      <h1>Register Here to Continue</h1>
+      <hr />
+
+      <form>
+        <legend><label>Full Name</label></legend>
+        <input type="text" placeholder="Enter your Name" class="mclass">
+        
+        <legend><label>Email</label></legend>
+        <input type="email" placeholder="abc123@gmail.com" class="mclass"/>
+        
+        <legend><label>Gender:</label></legend>
+        <input type="radio" name="gender" class="mr1"/> Male <input type="radio" name="gender" /> Female
+        
+        <legend><label>Password</label></legend>
+        <input type="password" class="mclass" placeholder="Enter Your Password"/>
+        
+        
+
+        <legend><label>City</label></legend>
+       <select class="mclass">
+          <option>Select City</option>
+          <option>Lucknow</option>
+          <option>Allahabad</option>
+          <option>Azamgarh</option>
+          <option>Ayodhya</option>
+          <option>Mirzapur</option>
+       </select>
+        
+
+        <legend><label>Country</label></legend>
+
+        <select class="mclass">
+          <option>Select Country</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Australia</option>
+          <option>Canada</option> 
+        </select>
+
+        <input type="checkbox" class="mr2">I Accept Terms and Conditions 
+        <div style="text-align: center;">
+        
+        <button class="mbt1" onclick="alert('Registered')">Submit</button>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
